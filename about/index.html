@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CostToLive — Data Sources & Methodology</title>
+    <meta name="description" content="Learn about CostToLive's data sources, methodology, and how we calculate cost of living indices.">
+    <link rel="canonical" href="https://costtolive.app/about/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="#6c5ce7" fill-opacity="0.15"/>
+                <path d="M8 22V14l8-6 8 6v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 24v-6h6v6" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            CostToLive
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/cheapest/">Cheapest</a>
+            <a href="/most-expensive/">Most Expensive</a>
+            <a href="/about/">About</a>
+        </div>
+    </div>
+</nav>
+
+    <section style="padding: 3rem 0;">
+        <div class="container" style="max-width:700px;">
+            <h1 style="font-size:2.25rem; font-weight:800; margin-bottom:1.5rem;">About CostToLive</h1>
+            
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;">📊 Data Sources</h2>
+                <p style="color:var(--text-muted); margin-bottom:0.75rem;">All data comes from official US government sources:</p>
+                <ul style="color:var(--text-muted); list-style:none; padding:0;">
+                    <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);">
+                        <strong style="color:var(--text);">U.S. Census Bureau — ACS 2023</strong><br>
+                        Median rent, income, home values, owner costs, population
+                    </li>
+                    <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);">
+                        <strong style="color:var(--text);">Tax Foundation — 2024</strong><br>
+                        State income tax, sales tax, and property tax rates
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;">🧮 Cost Index Methodology</h2>
+                <p style="color:var(--text-muted); margin-bottom:0.75rem;">
+                    Our cost index uses the national median as a baseline of 100. A city with an index of 120 is 20% more expensive than average; an index of 80 is 20% cheaper.
+                </p>
+                <p style="color:var(--text-muted);">
+                    The index is a weighted composite:<br>
+                    <strong style="color:var(--text);">40% Median Rent</strong> + <strong style="color:var(--text);">35% Home Value</strong> + <strong style="color:var(--text);">25% Owner Costs</strong>
+                </p>
+            </div>
+            
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;">📏 Affordability Ratio</h2>
+                <p style="color:var(--text-muted);">
+                    The rent-to-income ratio shows what percentage of median household income goes to rent. HUD considers below 30% as affordable. Above 30% is cost-burdened.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;">⚠️ Disclaimer</h2>
+                <p style="color:var(--text-muted);">
+                    This tool is for informational purposes only. Actual costs vary by neighborhood, lifestyle, and personal circumstances. Data reflects city-wide medians and may not represent specific areas within a city.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 CostToLive — Cost of Living Data for 4,000+ US Cities</p>
+        <p style="margin-top: 0.5rem;">Data: U.S. Census Bureau ACS 2023 · Tax Foundation 2024</p>
+    </div>
+</footer>
+</body></html>
