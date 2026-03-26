@@ -56,49 +56,155 @@
     </div>
 </nav>
 
-    <section style="padding: 3rem 0;">
+    <section style="padding: 3rem 0 1rem;">
         <div class="container" style="max-width:700px;">
-            <h1 style="font-size:2.25rem; font-weight:800; margin-bottom:1.5rem;">About CostToLive</h1>
-            
+            <h1 style="font-size:2.25rem; font-weight:800; margin-bottom:0.5rem;">About CostToLive</h1>
+            <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:2rem;">Free, comprehensive cost of living data for every US city.</p>
+        </div>
+    </section>
+
+    <section style="padding: 0 0 3rem;">
+        <div class="container" style="max-width:700px;">
+
+            <div class="card" style="margin-bottom:1.5rem; line-height:1.8;">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> What Is CostToLive?</h2>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">
+                    CostToLive.com is a free tool that helps you understand and compare the cost of living across <strong style="color:var(--text);">4,000+ US cities</strong>. 
+                    Whether you're considering a move, negotiating a salary, or just curious how your city stacks up, we provide clear, data-driven answers.
+                </p>
+                <p style="color:var(--text-muted);">
+                    Every city profile includes median rent, household income, home values, tax rates, affordability ratios, and a composite cost index. 
+                    Our <strong style="color:var(--text);">44,000+ comparison pages</strong> let you put any two major cities side by side with detailed breakdowns and analysis.
+                </p>
+            </div>
+
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Who Is This For?</h2>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;">
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-weight:700; margin-bottom:0.25rem;">Job Seekers</div>
+                        <div style="color:var(--text-muted); font-size:0.9rem;">Evaluating offers in different cities? See if a higher salary actually means more money in your pocket.</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-weight:700; margin-bottom:0.25rem;">Remote Workers</div>
+                        <div style="color:var(--text-muted); font-size:0.9rem;">Choosing where to live with location flexibility? Find cities where your income goes furthest.</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-weight:700; margin-bottom:0.25rem;">Retirees</div>
+                        <div style="color:var(--text-muted); font-size:0.9rem;">Planning retirement relocation? Compare tax burdens, housing costs, and overall affordability.</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-weight:700; margin-bottom:0.25rem;">Researchers</div>
+                        <div style="color:var(--text-muted); font-size:0.9rem;">Need reliable cost data for analysis? We source directly from US Census and Tax Foundation data.</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="card" style="margin-bottom:1.5rem;">
                 <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg> Data Sources</h2>
-                <p style="color:var(--text-muted); margin-bottom:0.75rem;">All data comes from official US government sources:</p>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">All data comes from official US government and research sources — no crowdsourcing, no estimates, no guesswork:</p>
                 <ul style="color:var(--text-muted); list-style:none; padding:0;">
-                    <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);">
-                        <strong style="color:var(--text);">U.S. Census Bureau — ACS 2023</strong><br>
-                        Median rent, income, home values, owner costs, population
+                    <li style="padding:0.75rem 0; border-bottom:1px solid var(--border);">
+                        <strong style="color:var(--text);">U.S. Census Bureau — American Community Survey (ACS) 2023</strong><br>
+                        5-year estimates for median gross rent, median household income, median home values, monthly owner costs, and total population. Covers all incorporated places with 10,000+ population.
                     </li>
-                    <li style="padding:0.5rem 0; border-bottom:1px solid var(--border);">
-                        <strong style="color:var(--text);">Tax Foundation — 2024</strong><br>
-                        State income tax, sales tax, and property tax rates
+                    <li style="padding:0.75rem 0; border-bottom:1px solid var(--border);">
+                        <strong style="color:var(--text);">Tax Foundation — 2024 State Tax Data</strong><br>
+                        Top marginal income tax rates, state sales tax rates, and effective property tax rates for all 50 states plus DC.
+                    </li>
+                    <li style="padding:0.75rem 0;">
+                        <strong style="color:var(--text);">U.S. Department of Housing and Urban Development (HUD)</strong><br>
+                        Affordability thresholds — the 30% rent-to-income ratio standard used across our analysis.
                     </li>
                 </ul>
             </div>
-            
+
             <div class="card" style="margin-bottom:1.5rem;">
                 <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg> Cost Index Methodology</h2>
-                <p style="color:var(--text-muted); margin-bottom:0.75rem;">
-                    Our cost index uses the national median as a baseline of 100. A city with an index of 120 is 20% more expensive than average; an index of 80 is 20% cheaper.
+                <p style="color:var(--text-muted); margin-bottom:1rem;">
+                    Our cost index uses the <strong style="color:var(--text);">national median as a baseline of 100</strong>. A city with an index of 120 is 20% more expensive than the typical US city; an index of 80 is 20% cheaper.
                 </p>
-                <p style="color:var(--text-muted);">
-                    The index is a weighted composite:<br>
-                    <strong style="color:var(--text);">40% Median Rent</strong> + <strong style="color:var(--text);">35% Home Value</strong> + <strong style="color:var(--text);">25% Owner Costs</strong>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">
+                    The index is a weighted composite of three housing-related metrics:
+                </p>
+                <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:0.75rem; text-align:center; margin-bottom:1rem;">
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.5rem; font-weight:800; color:var(--accent-light);">40%</div>
+                        <div style="color:var(--text-muted); font-size:0.8rem;">Median Rent</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.5rem; font-weight:800; color:var(--accent-light);">35%</div>
+                        <div style="color:var(--text-muted); font-size:0.8rem;">Home Value</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.5rem; font-weight:800; color:var(--accent-light);">25%</div>
+                        <div style="color:var(--text-muted); font-size:0.8rem;">Owner Costs</div>
+                    </div>
+                </div>
+                <p style="color:var(--text-muted); font-size:0.9rem;">
+                    Housing is weighted heavily because it's typically the largest expense for American households (30-40% of income) and varies most dramatically between cities.
                 </p>
             </div>
-            
+
             <div class="card" style="margin-bottom:1.5rem;">
                 <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg> Affordability Ratio</h2>
-                <p style="color:var(--text-muted);">
-                    The rent-to-income ratio shows what percentage of median household income goes to rent. HUD considers below 30% as affordable. Above 30% is cost-burdened.
+                <p style="color:var(--text-muted); margin-bottom:1rem;">
+                    The rent-to-income ratio measures what percentage of median household income goes to median rent. This is the standard metric used by HUD and housing economists:
                 </p>
+                <ul style="color:var(--text-muted); list-style:none; padding:0;">
+                    <li style="padding:0.4rem 0;"><span class="cost-badge cost-low" style="font-size:0.8rem;">Below 25%</span> — <strong style="color:var(--text);">Affordable</strong> — Comfortable margin for other expenses</li>
+                    <li style="padding:0.4rem 0;"><span class="cost-badge cost-mid" style="font-size:0.8rem;">25–30%</span> — <strong style="color:var(--text);">Moderate</strong> — Manageable but less room to save</li>
+                    <li style="padding:0.4rem 0;"><span class="cost-badge cost-high" style="font-size:0.8rem;">Above 30%</span> — <strong style="color:var(--text);">Cost-Burdened</strong> — HUD considers this financially strained</li>
+                </ul>
             </div>
-            
-            <div class="card">
+
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg> Site Statistics</h2>
+                <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; text-align:center;">
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.75rem; font-weight:800;">4,176</div>
+                        <div style="color:var(--text-muted); font-size:0.85rem;">City Profiles</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.75rem; font-weight:800;">44,855</div>
+                        <div style="color:var(--text-muted); font-size:0.85rem;">Comparison Pages</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.75rem; font-weight:800;">51</div>
+                        <div style="color:var(--text-muted); font-size:0.85rem;">States + DC</div>
+                    </div>
+                    <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm);">
+                        <div style="font-size:1.75rem; font-weight:800;">300</div>
+                        <div style="color:var(--text-muted); font-size:0.85rem;">Cities Compared (All Pairs)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom:1.5rem;">
                 <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Disclaimer</h2>
-                <p style="color:var(--text-muted);">
-                    This tool is for informational purposes only. Actual costs vary by neighborhood, lifestyle, and personal circumstances. Data reflects city-wide medians and may not represent specific areas within a city.
+                <p style="color:var(--text-muted); margin-bottom:1rem;">
+                    This tool is for <strong style="color:var(--text);">informational purposes only</strong>. Cost of living depends on many personal factors that a city-level database cannot capture:
+                </p>
+                <ul style="color:var(--text-muted); padding-left:1.25rem; margin-bottom:1rem;">
+                    <li>Neighborhood-level price variation within a city</li>
+                    <li>Personal lifestyle, family size, and spending habits</li>
+                    <li>Specific employer benefits, remote work arrangements</li>
+                    <li>Healthcare costs, childcare, and education</li>
+                    <li>Grocery and utility costs (not included in our index)</li>
+                </ul>
+                <p style="color:var(--text-muted); font-size:0.9rem;">
+                    Data reflects city-wide medians from the ACS 5-year estimates. Always do additional research for major financial decisions like relocation.
                 </p>
             </div>
+
+            <div class="card">
+                <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Contact</h2>
+                <p style="color:var(--text-muted);">
+                    Found an error? Have a suggestion? We'd love to hear from you.<br>
+                    Email: <a href="mailto:hello@costtolive.com" style="color:var(--accent-light);">hello@costtolive.com</a>
+                </p>
+            </div>
+
         </div>
     </section>
     
