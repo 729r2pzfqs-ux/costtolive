@@ -352,6 +352,12 @@ section .section-sub {
     font-size: 0.85rem;
 }
 
+/* FAQ Accordion */
+details summary { list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+details[open] summary svg { transform: rotate(180deg); }
+details summary:hover { background: var(--bg-card-hover); }
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links { display: none; }
