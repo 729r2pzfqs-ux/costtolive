@@ -1,0 +1,7 @@
+# costtolive.com
+
+## About
+CostToLive provides cost of living comparisons for 4,000+ US cities. Compare housing, groceries, utilities, transportation, and healthcare costs between cities.
+
+## URLs
+- Homepage: https://costtolive.com/
