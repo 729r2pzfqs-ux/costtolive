@@ -407,3 +407,6 @@ details summary:hover { background: var(--bg-card-hover); }
     .compare-cell-left, .compare-cell-right { text-align: center; padding: 0; }
     .stat-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Hide Cloudflare-injected cookie consent banner */
+#cookie-consent { display: none !important; }
