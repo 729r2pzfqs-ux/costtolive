@@ -408,5 +408,14 @@ details summary:hover { background: var(--bg-card-hover); }
     .stat-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Hide Cloudflare-injected cookie consent banner */
-#cookie-consent { display: none !important; }
+/* Strip Cloudflare-injected cookie consent banner */
+#cookie-consent {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    position: fixed !important;
+    bottom: -9999px !important;
+}
