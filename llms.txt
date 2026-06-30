@@ -1,7 +1,48 @@
 # costtolive.com
 
+> Cost of living comparisons for 4,000+ US cities, built on US Census Bureau, Tax Foundation, and HUD data.
+
 ## About
 CostToLive provides cost of living comparisons for 4,000+ US cities. Compare housing, groceries, utilities, transportation, and healthcare costs between cities.
 
-## URLs
-- Homepage: https://costtolive.com/
+## Features / Content
+- City profiles: a dedicated page for every covered city showing median rent, median household income, median home value, monthly owner costs, state tax rates, affordability ratio, and a composite cost index.
+- City-vs-city comparisons: side-by-side breakdowns putting any two major cities head to head across the same cost metrics, with analysis of which is cheaper.
+- Cheapest / most-expensive rankings: ranked lists of the cheapest and most expensive US cities to live in.
+- By-state browsing: cost of living organized by all 50 states plus DC.
+- Cost categories tracked: median gross rent, median household income, median home value, monthly owner costs, state income/sales/property tax rates, rent-to-income affordability ratio, and a weighted composite cost index (national median = 100).
+
+## Key Facts
+- 4,176 city profile pages (/city/).
+- 44,852 city-vs-city comparison pages (/compare/).
+- Cost index baseline of 100 = national median; >100 is more expensive, <100 is cheaper.
+- Composite cost index weighting: 40% median rent, 35% home value, 25% owner costs.
+- Coverage: incorporated places with 10,000+ population across all 50 states plus DC.
+- Affordability bands: below 25% = affordable, 25–30% = moderate, above 30% = cost-burdened (HUD standard).
+
+## Sections
+- [Homepage](https://costtolive.com/): city lookup and city-comparison search.
+- [Cheapest Cities](https://costtolive.com/cheapest/): cheapest US cities to live in, ranked.
+- [Most Expensive Cities](https://costtolive.com/most-expensive/): most expensive US cities, ranked.
+- [Cost of Living by State](https://costtolive.com/states/): all 50 states plus DC, ranked.
+- [About](https://costtolive.com/about/): data sources, methodology, and disclaimers.
+- [Sample city profile](https://costtolive.com/city/austin-tx/): Cost of Living in Austin, TX.
+- [Sample comparison](https://costtolive.com/compare/abilene-tx-vs-allen-tx/): Abilene, TX vs Allen, TX.
+
+## URL Patterns
+- City profile: `/city/<city-slug>-<state>/` (e.g. `/city/austin-tx/`).
+- City comparison: `/compare/<city-a>-vs-<city-b>/` (e.g. `/compare/abilene-tx-vs-allen-tx/`).
+- Cheapest rankings: `/cheapest/`.
+- Most expensive rankings: `/most-expensive/`.
+- By state: `/states/` (state index).
+
+## Data Sources / Methodology
+- U.S. Census Bureau — American Community Survey (ACS) 2023, 5-year estimates: median gross rent, median household income, median home value, monthly owner costs, and population.
+- Tax Foundation — 2024 State Tax Data: top marginal income tax, state sales tax, and effective property tax rates for all 50 states plus DC.
+- U.S. Department of Housing and Urban Development (HUD): the 30% rent-to-income affordability threshold.
+- Cost index = weighted composite of median rent (40%), home value (35%), and monthly owner costs (25%), normalized so the national median equals 100.
+
+## Notes
+- Static site hosted on GitHub Pages.
+- Figures are city-wide medians for informational use only; they do not capture neighborhood variation, lifestyle, family size, healthcare, childcare, grocery, or utility costs. Always do additional research before major financial decisions.
+- Not affiliated with the U.S. Census Bureau, the Tax Foundation, or HUD.
