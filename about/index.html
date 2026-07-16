@@ -4,6 +4,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QSMJY8CZM"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3QSMJY8CZM");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <meta name="google-site-verification" content="PlZuNcYbxg3PIHNKOY6ao-S8o3-h5W8xyJv2dMZsBSo">
     <title>About CostToLive — Data Sources & Methodology</title>
     <meta name="description" content="Learn about CostToLive's data sources, methodology, and how we calculate cost of living indices.">
@@ -30,6 +31,8 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://costtolive.com/og-image.png">
+    <meta name="twitter:title" content="About CostToLive — Data Sources & Methodology">
+    <meta name="twitter:description" content="Learn about CostToLive's data sources, methodology, and how we calculate cost of living indices.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,6 +41,7 @@
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "About CostToLive", "url": "https://costtolive.com/about/", "dateModified": "2026-07-06"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://costtolive.com/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://costtolive.com/about/"}]}</script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="nav">
     <div class="nav-inner">
@@ -57,7 +61,7 @@
             <a href="/most-expensive/">Most Expensive</a>
             <a href="/about/">About</a>
         </div>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.mobile-menu').classList.toggle('active')" aria-label="Menu">
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Menu" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true'?'true':'false');document.querySelector('.mobile-menu').classList.toggle('active')">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
     </div>
@@ -69,6 +73,8 @@
         <a href="/about/">About</a>
     </div>
 </nav>
+<a id="main-content" tabindex="-1"></a>
+
 
     <section style="padding: 3rem 0 1rem;">
         <div class="container" style="max-width:700px;">
@@ -88,7 +94,7 @@
                 </p>
                 <p style="color:var(--text-muted);">
                     Every city profile includes median rent, household income, home values, tax rates, affordability ratios, and a composite cost index. 
-                    Our <strong style="color:var(--text);">44,000+ comparison pages</strong> let you put any two major cities side by side with detailed breakdowns and analysis.
+                    Our <strong style="color:var(--text);">49,000+ comparison pages</strong> let you put any two major cities side by side with detailed breakdowns and analysis.
                 </p>
             </div>
 
@@ -116,7 +122,7 @@
 
             <div class="card" style="margin-bottom:1.5rem;">
                 <h2 style="font-size:1.25rem; margin-bottom:0.75rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;margin-right:0.5rem;position:relative;top:-1px;"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg> Data Sources</h2>
-                <p style="color:var(--text-muted); margin-bottom:1rem;">All data comes from official US government and research sources — no crowdsourcing, no estimates, no guesswork:</p>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">All underlying city metrics come from official US government and research sources — no crowdsourcing, no user-generated content. Our cost index is a weighted composite we compute from these figures:</p>
                 <ul style="color:var(--text-muted); list-style:none; padding:0;">
                     <li style="padding:0.75rem 0; border-bottom:1px solid var(--border);">
                         <strong style="color:var(--text);">U.S. Census Bureau — American Community Survey (ACS) 2023</strong><br>

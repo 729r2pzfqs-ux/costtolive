@@ -8,7 +8,7 @@
     --border-hover: #2a2a3a;
     --text: #e4e4ef;
     --text-muted: #8888a0;
-    --text-dim: #5a5a70;
+    --text-dim: #808098;
     --accent: #1D9E75;
     --accent-light: #5DCAA5;
     --accent-glow: rgba(29, 158, 117, 0.15);
@@ -408,16 +408,53 @@ details summary:hover { background: var(--bg-card-hover); }
     .stat-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Strip Cloudflare-injected cookie consent banner */
-#cookie-consent {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    pointer-events: none !important;
-    position: fixed !important;
-    bottom: -9999px !important;
+/* Skip to content link (screen-reader / keyboard navigation) */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 0 0 var(--radius-xs) 0;
+}
+.skip-link:focus { top: 0; }
+
+/* 3-column stat grid (tax section): stack to 1 column on very narrow screens */
+@media (max-width: 480px) {
+    .stat-grid[style*="repeat(3"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f8f8fc;
+        --bg-card: #ffffff;
+        --bg-card-hover: #f0f0f8;
+        --bg-surface: #f4f4fa;
+        --border: #e0e0ec;
+        --border-hover: #d0d0e0;
+        --text: #1a1a2e;
+        --text-muted: #505070;
+        --text-dim: #606080;
+        --accent-glow: rgba(29, 158, 117, 0.12);
+        --green: #007a6e;
+        --green-dim: rgba(0, 122, 110, 0.12);
+        --red: #b5005b;
+        --red-dim: rgba(181, 0, 91, 0.1);
+        --orange: #b45a00;
+        --orange-dim: rgba(180, 90, 0, 0.1);
+    }
+    .nav { background: rgba(248, 248, 252, 0.9); }
+    .card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+    .search-box input { background: var(--bg-surface); }
+    body { color-scheme: light; }
 }
 
 .footer a {

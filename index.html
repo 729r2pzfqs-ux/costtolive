@@ -11,6 +11,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <meta name="google-site-verification" content="PlZuNcYbxg3PIHNKOY6ao-S8o3-h5W8xyJv2dMZsBSo">
     <title>CostToLive — Cost of Living Comparison for 4,000+ US Cities (2026)</title>
     <meta name="description" content="Compare cost of living between US cities. Rent, income, home values, and taxes side by side. Free data from the US Census Bureau.">
@@ -37,6 +38,8 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://costtolive.com/og-image.png">
+    <meta name="twitter:title" content="CostToLive — Cost of Living Comparison for 4,000+ US Cities (2026)">
+    <meta name="twitter:description" content="Compare cost of living between US cities. Rent, income, home values, and taxes side by side. Free data from the US Census Bureau.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -44,6 +47,7 @@
     
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="nav">
     <div class="nav-inner">
@@ -63,7 +67,7 @@
             <a href="/most-expensive/">Most Expensive</a>
             <a href="/about/">About</a>
         </div>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.mobile-menu').classList.toggle('active')" aria-label="Menu">
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Menu" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true'?'true':'false');document.querySelector('.mobile-menu').classList.toggle('active')">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
     </div>
@@ -75,6 +79,8 @@
         <a href="/about/">About</a>
     </div>
 </nav>
+<a id="main-content" tabindex="-1"></a>
+
 
     <section class="hero">
         <div class="container">
@@ -118,7 +124,7 @@
         <div class="container">
             <div class="stat-grid">
                 <div class="stat">
-                    <div class="stat-value" style="color: var(--accent-light);">4,176</div>
+                    <div class="stat-value" style="color: var(--accent-light);">4,309</div>
                     <div class="stat-label">Cities</div>
                 </div>
                 <div class="stat">
@@ -153,7 +159,7 @@
                     <span>Index: 134</span>
                     <span>Index: 147</span>
                 </div>
-                <span class="cost-badge cost-low">Denver is 13% more</span>
+                <span class="cost-badge cost-low">Denver is 10% more</span>
             </a>
         
             <a href="/compare/new-york-ny-vs-los-angeles-ca/" class="card" style="text-decoration:none; color:inherit; cursor:pointer;">
@@ -166,7 +172,7 @@
                     <span>Index: 166</span>
                     <span>Index: 187</span>
                 </div>
-                <span class="cost-badge cost-low">Los Angeles is 21% more</span>
+                <span class="cost-badge cost-low">Los Angeles is 13% more</span>
             </a>
         
             <a href="/compare/miami-fl-vs-houston-tx/" class="card" style="text-decoration:none; color:inherit; cursor:pointer;">
@@ -179,7 +185,7 @@
                     <span>Index: 129</span>
                     <span>Index: 88</span>
                 </div>
-                <span class="cost-badge cost-high">Miami is 41% more</span>
+                <span class="cost-badge cost-high">Miami is 47% more</span>
             </a>
         
             <a href="/compare/seattle-wa-vs-portland-or/" class="card" style="text-decoration:none; color:inherit; cursor:pointer;">
@@ -192,7 +198,7 @@
                     <span>Index: 196</span>
                     <span>Index: 138</span>
                 </div>
-                <span class="cost-badge cost-high">Seattle is 58% more</span>
+                <span class="cost-badge cost-high">Seattle is 42% more</span>
             </a>
         
             <a href="/compare/san-francisco-ca-vs-chicago-il/" class="card" style="text-decoration:none; color:inherit; cursor:pointer;">
@@ -214,7 +220,7 @@
             <p class="section-sub">Lowest cost of living (25k+ population)</p>
             <div class="card" style="overflow:hidden; padding:0;">
                 <table class="rankings-table">
-                    <thead><tr><th>#</th><th>City</th><th>Cost Index</th><th>Median Rent</th><th>Median Income</th></tr></thead>
+                    <thead><tr><th scope="col">#</th><th scope="col">City</th><th scope="col">Cost Index</th><th scope="col">Median Rent</th><th scope="col">Median Income</th></tr></thead>
                     <tbody>
     
         <tr>
@@ -287,7 +293,7 @@
             <p class="section-sub">Highest cost of living (25k+ population)</p>
             <div class="card" style="overflow:hidden; padding:0;">
                 <table class="rankings-table">
-                    <thead><tr><th>#</th><th>City</th><th>Cost Index</th><th>Median Rent</th><th>Median Income</th></tr></thead>
+                    <thead><tr><th scope="col">#</th><th scope="col">City</th><th scope="col">Cost Index</th><th scope="col">Median Rent</th><th scope="col">Median Income</th></tr></thead>
                     <tbody>
     
         <tr>
